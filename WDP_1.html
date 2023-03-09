@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="">
+	<title>Web Design Project 1</title>
+	<link rel="icon" href="logo\favicon.png">
+	<style type="text/css">
+		ul{ list-style-type: none;
+		    margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: grey;
+			position: fixed;
+			top: 0;
+			width: 100%;}
+
+		li{ float: left; }
+
+		li a{display: block;
+			 color: white;
+			 text-align: center;
+			 padding: 18px 16px;
+			 text-decoration: none;}
+
+		button:hover, i:hover, li a:hover:not(.active){background-color: red; opacity: 0.5;}
+
+		.active{background-color: green;}
+		.search{float: right;
+				color: white;
+				padding: 15px;}
+		input[type=text]{ width: 180px;
+						  box-sizing: border-box;
+						  border: 1px solid black; 
+						  border-radius: 10px;
+						  font-size: 15px;
+						  background-color: white;
+						  background-image: url("D:\icons8-search-30.png");
+						  background-position: 0px 0px;
+						  background-repeat: no-repeat;
+						  padding: 3px 20px 4px 40px;
+						  -webkit-transition: width 0.4s ease-in-out;
+						  transition: width 0.4s ease-in-out;}
+
+		.totalspace{max-width: 100%; height: 600px;}
+		.picbox{max-width: 100%%; height: 500px;}
+		.card{box-shadow: 0 4px 8px 0 rgba(0,0,0,2);
+			 max-width: 100%; 
+			 float: left; 
+			 margin-top: 10px;
+			 margin-right: 60px; 
+			 text-align: center;
+			  font-family: arial;}
+
+		.gradient{ background-color: white;
+				   background-image: linear-gradient(to bottom,white,cyan);
+				   height: auto; }
+
+		button{border: none; 
+				outline: 0; 
+				display: inline-block;
+			    padding: 8px; 
+			    color: white; 
+			    background-color: orange; 
+			    text-align: center;
+			    cursor: pointer;
+			    width: 100%;
+			    font-size: 18px;}	
+
+		footer {background-color: grey;
+				padding: 20px;
+				text-align: center;
+				color: white; 
+				margin-top: 1010px;}
+
+		th,td {text-align: left; padding-right: 200px;}
+	</style>
+</head>
+<body>
+	<ul>
+		<img src="logo\EDENTRIP.png" style="width: 55px;  padding-left: 10px; padding-top: 10px; float: left;">
+		<h3 style="float: left; color: purple;padding-right: 10px;"><em>E D E N T R I P</em></h3>
+		<li><a class="active" href="#">Home</a></li>
+		<li><a href="ABOUT_US.html">About us</a></li>
+		<li><a href="TOUR_PACKAGES.html">Tour Packages</a></li>
+		<li><a href="ON THE GO.html">On The Go</a></li>
+		<li><a href="CONTACT_US.html">Contact</a></li>
+			<div class="search">
+				<input type="text" name="search" placeholder="Type your tour">
+			</div>
+	</ul>
+	<div class="totalspace">
+		<div class="picbox">
+			<img src=https://files.structurae.net/files/photos/1/the_bengal_heritage.jpg width="100%" height="500" style="margin-top: 30px; position: absolute; z-index: -1;">
+			<h1 style="padding-top: 50px; font-size: 50px; color: black;"><i>Unearth the Incredible Earth</i></h1>
+		</div>
+		<h1 style="text-align: center; padding-top: 30px; font-size: 35px; color: purple;">Selected Tour Packages By EDENTRIP</h1>
+		<div class="card" style="margin-left: 45px;">
+			<img src="image\Sundarban.jpg"width="300" height="240">
+				<div class="gradient">
+					<h1>Sundarban Tour</h1>
+					<p>1 night, 2 days package cost</p>
+					<h2><i class="fa-solid fa-indian-rupee-sign"></i> 2000/ 2 Person </h2>
+					<p><button>Booking Now Up to 25% OFF</button></p>
+				</div>	
+		</div>
+			<div class="card">
+				<img src="image\Purulia.jpg"width="300" height="240">
+					<div class="gradient">
+						<h1>Purulia Tour</h1>
+						<p>1 night, 2 days package cost</p>
+						<h2><i class="fa-solid fa-indian-rupee-sign"></i> 1500/ 2 Person </h2>
+						<p><button>Booking Now</button></p>
+					</div>	
+			</div>
+			<div class="card">
+				<img src="image\Darjeeling.jpg"width="300" height="240">
+					<div class="gradient">
+						<h1>Darjeeling Tour</h1>
+						<p>3 night, 4 days package cost</p>
+						<h2><i class="fa-solid fa-indian-rupee-sign"></i> 7000/ 2 Person </h2>
+						<p><button>Booking Now</button></p>
+					</div>	
+			</div>
+			<div class="card"style="float: right;">
+				<img src="image\Andaman.jpg"width="300" height="240">
+					<div class="gradient">
+						<h1>Andaman Tour</h1>
+						<p>4 night, 5 days package cost</p>
+						<h2><i class="fa-solid fa-indian-rupee-sign"></i> 42000/ 2 Person </h2>
+						<p><button>Booking Now</button></p>
+					</div>	
+			</div>
+			<div class="card" style="margin-left: 45px;">
+				<img src="image\Kerala.jpg"width="300" height="240">
+					<div class="gradient">
+						<h1>Kerala Tour</h1>
+						<p>5 night, 7 days package cost</p>
+						<h2><i class="fa-solid fa-indian-rupee-sign"></i> 32000/ 2 Person </h2>
+						<p><button>Booking Now</button></p>
+					</div>	
+			</div>
+			<div class="card">
+				<img src="image\Shilong.jpg"width="300" height="240">
+					<div class="gradient">
+						<h1>Shilong Tour</h1>
+						<p>4 night, 6 days package cost</p>
+						<h2><i class="fa-solid fa-indian-rupee-sign"></i> 22000/ 2 Person </h2>
+						<p><button>Booking Now</button></p>
+					</div>	
+			</div>
+			<div class="card">
+				<img src="image\shimla.jpg"width="300" height="240">
+					<div class="gradient">
+						<h1>Shimla Tour</h1>
+						<p>5 night, 7 days package cost</p>
+						<h2><i class="fa-solid fa-indian-rupee-sign"></i> 24000/ 2 Person </h2>
+						<p><button>Booking Now</button></p>
+					</div>	
+			</div>
+			<div class="card" style="float: right;">
+				<img src="image\lava Lolagaon.jpg"width="300" height="240">
+					<div class="gradient">
+						<h1>lava Lolagaon Tour</h1>
+						<p>7 night, 9 days package cost</p>
+						<h2><i class="fa-solid fa-indian-rupee-sign"></i> 32000/ 2 Person </h2>
+						<p><button>Booking Now</button></p>
+					</div>	
+			</div>
+	</div>
+	<footer>
+		<table style="text-align: right;">
+			<tr>
+				<th>Quick Links</th>
+				<th>Best Sellers</th>
+				<th>Get In Touch</th>
+				<th>SOCIAL MEDIA</th>
+			</tr>
+			<tr>
+				<td>About us</td>
+				<td>Shimla Manali Tour</td>
+				<td>Address: 69/1 Baranilpur Road</td>
+				<td style="cursor: pointer; color: purple; font-size: 25px;"><i class="fa-brands fa-telegram"></i> <a href="https://www.facebook.com/Edentrip-103137699143423"> <i class="fa-brands fa-facebook"></i></a>  <i class="fa-brands fa-twitter"></i>  <i class="fa-brands fa-linkedin"></i></td>
+			</tr>
+			<tr>
+				<td>Tour packages</td>
+				<td>Shikim Tour</td>
+				<td>Sripally</td>
+			</tr>
+			<tr>
+				<td>On The Go</td>
+				<td>Kashmir Tour</td>
+				<td>Burdwan,West Bengal-713103</td>
+			</tr>	
+			<tr>
+				<td>Contact</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>	
+		</table>
+		Copyright &copy 2020-2022 Edentrip 
+	</footer>			
+</body>
+</html>	

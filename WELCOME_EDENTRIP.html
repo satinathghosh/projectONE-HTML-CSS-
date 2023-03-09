@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .totalspace{background-color: pink;}
+  .container {position: relative;
+              width: 50%;}
+  
+  .image { display: block;
+           width: 100%;
+           height: auto;
+           transition: 1s ease;
+           backface-visibility: hidden;}
+  
+  .middle {transition: 1s ease;
+           opacity:0; 
+           position: absolute; 
+           top: 50%; 
+          left: 50%; 
+          transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          text-align: center;}
+
+  .container:hover .image {  opacity: 0.3;}
+  
+  .container:hover .middle {opacity: 1;}
+
+  .text {background-color: blue;
+         color:white;
+         font-size: 16px;
+         padding: 16px 32px;} /*(here text mean button)*/
+
+</style>
+</head>
+<body> 
+<div class="totalspace">
+<center>
+<h1 style="font-size: 40px;"><i><span style="color: purple;">WELCOME</span> <span style="color: blue;"> TO </span> <span style="color: purple;"> EDENTRIP </span></i></h1>
+<h1 style="color: red;"><i>Move your mouse over the image to see the button and click it for entry my</i> Project_1.</h1>
+
+  <div class="container">
+      <img src="logo\EDENTRIP.png" class="image" style="width: 100%;">
+      <div class="middle">
+        <a href="WDP_1.html">
+        <div class="text">Welcome to EDENTRIP</div>
+        </a>
+      </div>
+ </div>
+</center>
+</div>
+</body>
+</html>
+
+
+
+

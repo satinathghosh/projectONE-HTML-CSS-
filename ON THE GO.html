@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<title> On The Go</title>
+	<style type="text/css">
+		ul{
+			 list-style-type: none;
+		    margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: pink;
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+
+		li{ 
+			float: right; 
+		}
+
+		li a{
+			display: block;
+			 color: purple;
+		 	 padding: 18px 26px;
+			 text-decoration: none;
+			}
+		button{
+			cursor: pointer;
+		}
+
+		.image{
+				display: block;
+				width: 315px;
+				height: 265px;
+			}
+		.overlay{
+				position: absolute;
+				bottom: 0; margin-left: 0px;
+				background: rgba(0,0,0,0.5); 
+				color: yellow;
+				width: 275px;
+				opacity: 0;
+				transition: .9s ease; 
+				cursor: pointer;
+				font-size: 25px;
+				padding: 20px;
+			}
+		.card:hover .overlay {opacity: 1;}
+		.card:hover .image {opacity: 0.3;}
+
+		button:hover, li a:hover:not(.active){
+												background-color: green; 
+												opacity: 0.5;
+											}
+		.active{
+			background-color: green;
+		}
+		.totalspace{
+			max-width: 100%; 
+			height: 1350px;
+		}
+		.picbox{
+			max-width: 100%; 
+			height: 40%;
+		}
+		.card{
+			width: 100%; 
+			position: relative;
+			flex-basis: auto;
+			text-align: center; 
+		}
+
+		footer {
+				background-color: grey;
+				padding: 20px;
+				text-align: left;
+				color: white; 
+				margin-top: 10px;
+			}
+		.row{
+			display: flex;
+			justify-content: space-around;
+		}
+		@media only screen and (max-width:800px){
+			.overlay{position: absolute;opacity: 1;}
+			.card{flex-basis: 100%;margin-bottom: 10%;z-index: -1;}
+			.row{flex-direction: column;margin: 0 30%;}
+			footer{margin-top: 10%;}
+		}
+	</style>
+	
+</head>
+<body>
+	<ul>
+		<img src="logo\EDENTRIP.png" style="width: 65px;  padding-left: 10px; padding-top: 10px; float: left;">
+		<h2 style="float: left; color: purple;padding-right: 10px;"><em>E D E N T R I P</em></h2>
+		<li style="font-size: 25px;"><a href="WDP_1.html">Home</a></li>
+		<li style="font-size: 25px;"><a class="active" href="#"><i>On The Go</i></a></li>
+	</ul>
+	<div class="totalspace">
+		<div class="picbox">
+			<img src="https://www.sotc.in/images/on-the-go/Tourist-Experience-Main-Banner.jpg" width="100%" height="500" style="margin-top: 21px; position: absolute; z-index: -1;">
+				<h1 style="padding-top: 15px; font-size: 60px; color:purple; text-align: center;"><i>Activities & Experiences</i></h1>
+		</div>
+		<div>
+			<h1 style="font-size: 35px; text-align: center;color: purple;">Experience Tours</h1>
+			<p style="margin: 0px 100px 0px 100px; font-size: 20px;">Travel is an art. Well, if you follow this proverb, you will understand that traveling indeed is not only about exploring new places, but also living through an experience. An experience got through traveling is unique. It is not just visiting a place but experiencing the tour like a local. There are times when you experience tours take a backseat because you have already booked your tours. Well, when you have On the Go by EDENTRIP, we ensure you have a memorable experience tour while on your vacation.</p>
+			<p style="margin: 0px 100px 0px 100px; font-size: 20px;">Traveling has a lot of emotions involved, and the best can be captured with our On the Go experience tours. The major highlight of On the Go experience tours is that it helps you book your tours while on vacation. This whole new concept has gained immense popularity among every traveler. No matter whether you are looking for any experience, you can blindly rely on EDENTRIPs’ On the Go experience tours.</p>
+ 			<p style="margin: 0px 100px 0px 100px; font-size: 20px;">Next time you want to plan your experience tour while on your vacation get in touch with the experts at On the Go and we will make it happen! If you have just started.</p>
+ 		  <div class="row">
+ 				<div class="col">
+ 					<select  style="font-size: 15px; margin-top: 15px;">
+ 						<option>Select your destination</option>
+ 						<option>North East</option>
+ 						<option>Rajasthan</option>
+ 						<option>Kerala</option>
+ 						<option>Himachal</option>
+ 						<option>Goa</option>
+ 						<option>Andaman</option>
+ 					</select>
+ 				</div>
+ 				<div class="col">
+ 					<button style="font-size: 15px; background-color: yellowgreen; margin: 5%;">GO</button>
+ 				</div>
+ 			</div>
+ 				<h1 style="padding-top: 25px; font-size: 35px; color:purple; text-align: center;">Top Destinations</h1>
+ 		</div>
+ 		
+ 		<div class="row">
+ 			<div class="col">
+ 				<div class="card">
+ 					<img src="image\Purulia.jpg" class="image" style="width: 315px; height: 265px;">
+ 					<div class="overlay">PURULIA</div>
+ 				</div>
+ 			</div>
+ 			<div class="col">
+ 				<div class="card">
+ 					<img src="image\Arunachal.jpg" class="image"  style="width: 315px; height: 265px;">
+ 					<div class="overlay"><a style="color: white;text-decoration: none;" href="NORTHEAST.html">ARUNACHAL</a></div>
+ 				</div>
+ 			</div>
+ 			<div class="col">
+ 				<div class="card">
+ 					<img src="image\Darjeeling.jpg" class="image" style="width: 315px; height: 265px;">
+ 					<div class="overlay">DARJEELING</div>
+ 				</div>	
+ 			</div>
+ 		</div>
+		
+		<footer>
+			Phone: +91 9614189022 <br>
+			Email: infoedentrip@gmail.com<br>
+			<p style="text-align: center;">Copyright &copy 2020-2022 Edentrip</p>
+		</footer>
+	</div>
+</body>
+</html>

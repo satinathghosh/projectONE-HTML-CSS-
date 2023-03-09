@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<title>Contact Us</title>
+	<style type="text/css">
+		ul{ list-style-type: none;
+		    margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: grey;
+			position: fixed;
+			top: 0;
+			width: 100%;}
+
+		li{ float: right; }
+
+		li a{display: block;
+			 color: white;
+		 	 padding: 18px 26px;
+			 text-decoration: none;}
+		button:hover,a:hover, li a:hover:not(.active){background-color: green; opacity: 0.5;}
+
+		.active{background-color: green;}
+		.totalspace{max-width: 100%; height: 600px;}
+		.picbox{max-width: 100%%; height: 500px;}
+		.textbox{max-width: 50%; 
+			 	float: left; 
+			 	margin-top: 0px;
+			 	margin-right: 0px; 
+			 	padding: 80px;
+			 	text-align: left;
+			  	font-family: arial;}
+		button{cursor: pointer;}
+		footer {background-color: grey;
+				padding: 20px;
+				text-align: left;
+				color: white; 
+				margin-top: 600px;}	    	
+	</style>
+</head>
+<body> 
+	<ul>
+		<img src="logo\EDENTRIP.png" style="width: 55px;  padding-left: 10px; padding-top: 10px; float: left;">
+		<h3 style="float: left; color: purple;padding-right: 10px;"><em>E D E N T R I P</em></h3>
+		<li><a href="WDP_1.html">Home</a></li>
+		<li><a href="ABOUT_US.html">About us</a></li>
+		<li><a href="TOUR_PACKAGES.html">Tour Packages</a></li>
+		<li><a href="ON THE GO.html">On The Go</a></li>
+		<li><a class="active" href="CONTACT_US.html">Contact</a></li>
+	</ul>
+	<div class="totalspace">
+		<div class="picbox">
+			<img src="image\Banner_1.jpg" width="100%" height="500" style="margin-top: 21px; position: absolute; z-index: -1;">
+			<h1 style="padding-top: 150px; font-size: 60px; color:purple; text-align: center;">CONTACT  US</h1>
+		</div>
+		<div class="textbox" style="width: 700px; height: 500px; margin-top: 30px;">
+			<h1>WE'RE READY, LET'S TALK</h1>
+			<h4>Please fill up our contact form so that our travel executive can call you back in next 24 hours time. You can also check out our home page for more information about us.</h4><br><br>
+		<form >
+			<input type="text" name="name" placeholder="Enter Your Name" required size="50"><br><br>
+			<input type="mail" name="mail" placeholder="Enter Your Email Address"required size="50"><br><br>
+			<input type="mobile" name="mobile" placeholder="Enter Your Phone Number"required size="50"><br><br>
+		</form>
+			This field is required
+			<br><br>
+		<button style="background: green; color: white;padding: 10PX;border-radius: 10PX;"> SEND MASSAGE </button>
+		</div>
+		<div class="textbox" style="width: 400px; height: 500px; margin-top: 30px; float: right;">
+			<h1>CONTACT INFO</h1>
+			<h3>Address</h3>
+			<address>
+				69/1 Baranilpur Road<br>
+				Sripally, Burdwan<br>
+				West Bengal-713103
+			</address><br><br>
+			<h3>Email Us</h3>
+			<p>edentrip24hours@gmail.com</p>
+			<h3>Call Us</h3>
+			+91 9614189022<br><br>
+			<div style="font-size: 40px;">
+				 <a href="https://www.facebook.com/Edentrip-103137699143423"><i class="fa-brands fa-facebook-square"></i></a>
+				<a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+				<a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+			</div>
+		</div>
+	</div>
+	<footer>
+		Phone: +91 9614189022 <br>
+		Email: infoedentrip@gmail.com
+		<p style="text-align: center;">Copyright &copy 2020-2022 Edentrip</p>
+	</footer>
+</body>
+</html>
